@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人博客首页</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+            background-color:white;
+        }
+
+        body{
+            text-align: center;
+            line-height: 26px;
+            font-family: Helvetica;
+            background-color: rgba(248, 248, 250, 1) ;
+
+        }
+
+        #banner{
+            width: 70%;
+            height: 200px;
+            margin: 0 auto;
+            background: url("./img/mybanner.png") no-repeat;
+            padding-bottom: 10px;
+        }
+
+            .touxiamg{
+                border-radius: 50%;
+                margin-top: 50px;
+                float: left;
+                margin-left: 100px;
+            }
+
+
+            .myname{
+                float:left ;
+                margin-top: 60px;
+                margin-left: 40px;
+                background-color: white;
+            }
+
+
+        .zhuti{
+            padding-top: 20px;
+            width:70% ;
+            height: 1000px;
+            margin: 0 auto;
+
+        }
+
+        .neirong{
+            width: 60%;
+            margin-right: 50px;
+            float: left;
+            height: 100%;
+            font-family: Helvetica;
+            font-weight: normal;
+        }
+
+        .table01 td{
+            padding-left: 50px;
+            border-spacing: 100px;
+            font-size: 15px;
+            font-weight: 700;
+
+ 
+        }
+
+
+          .table01 a:link,a:visited{
+              text-decoration: none;
+              color: #646464;
+
+          }
+
+          .table01 a:hover{
+              color: black;
+              text-decoration: underline;
+
+        }
+
+
+        .neirong-list{
+            text-align: left;
+            padding-left:50px ;
+            padding-top: 20px;
+
+        }
+
+
+            .listtitle{
+                padding-top: 20px;
+            }
+
+            .listtitle a {
+                text-decoration: none;
+                color: #333333;
+            }
+
+            .listtitle a:hover{
+                text-decoration: underline;
+            }
+
+
+            .listyulan {
+                padding-top: 5px;
+                padding-bottom: 30px;
+                color: gray;
+                font-size: 13px;
+            }
+
+            .listline{
+                height:10px;
+                border:none;
+                border-top:1px solid #f0f0f0;
+            }
+
+
+
+
+        .celan{
+            width: 30%;
+            float: left;
+            height: 40%;
+            text-align: left;
+
+        }
+
+            .searchform{
+                position: relative;
+            }
+
+
+            .search{
+                width: 85%;
+                height: 40px;
+                border-radius: 18px;
+                outline: none;
+                border: 1px solid #cccccc;
+                padding-left: 20px;
+                position: absolute;
+            }
+
+        .btn {
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            background: url("./img/mys.png") no-repeat ;
+            top: 1px;
+            left: 70%;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .remenlist{
+            padding-top: 70px;
+        }
+
+        .rementitle{
+            font-size: 15px;
+            color: #969696;
+            font-weight: bolder;
+        }
+
+        .remenul{
+            list-style-type: none;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .remenul li{
+            padding-top: 10px;
+        }
+
+
+        .remenul li a{
+            text-decoration: none;
+            color:#333333 ;
+        }
+
+        .remenul li a:hover{
+            color: #e28105;
+        }
+
+        .shuzi{
+            margin-right:10px ;
+            border-radius:  50%;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 18px;
+            color: #fff;
+        }
+
+        .remenhr{
+            height:10px;
+            border:none;
+            border-top:1px solid #f0f0f0;
+            margin-top: 20px;
+        }
+
+        .youqingtitle{
+            font-size: 15px;
+            color: #969696;
+            font-weight: bolder;
+        }
+
+        .youqingul{
+            border-radius:  15%;
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+            line-height: 20px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .footer{
+            width: 100%;
+            clear: both;
+            background-color: #939393;
+        }
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+<div id = "banner"  >
+    <div><img  class="touxiamg" src="./img/mytouxiang.jpg" width="100px" height="100px" ></div>
+    <div class = "myname" >
+        <h2 style="line-height: 28px"><strong>Veronica</strong></h2>
+        <p style="font-size: 14px;text-align: left; color: #333333"> 前端程序媛 </p>
+        <p style="font-size: 14px; text-align: left;color: #333333">坐标武汉</p>
+    </div>
+</div>
+
+
+
+<div class = "zhuti">
+
+    <div class = "neirong">
+
+        <div class = "neirong-banner">
+            <table class = "table01">
+                <tr>
+                    <td> <a href = "">首页</a></td>
+                    <td><a href = "">前端点滴</a></td>
+                    <td><a href = "">作品集</a></td>
+                    <td><a href = "">生活感悟</a></td>
+                    <td><a href = "">关于我</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="neirong-list">
+            <div id = "list01"></div>
+        </div>
+
+    </div>
+
+    <script>
+        var contents = [
+            {
+            title:"这是第1篇文章标题",
+            url:"******",
+            yulan:"我们口中的生化，也就是临床生物化学，是一门由化学、生物化学以及临床医学相结合之后......是一门由化学、生物化学以及临床医学相结合之后",
+
+            },
+
+            {
+             title:"这是第2篇文章标题",
+             url:"******",
+             yulan:"我们口中的生化，也就是临床生物化学，是一门由化学、生物化学以及临床医学相结合之后......是一门由化学、生物化学以及临床医学相结合之后",
+            },
+
+            {
+             title:"这是第3篇文章标题",
+             url:"******",
+             yulan:"我们口中的生化，也就是临床生物化学，是一门由化学、生物化学以及临床医学相结合之后......是一门由化学、生物化学以及临床医学相结合之后",
+            }
+        ];
+
+        function show() {
+            var i;
+            var text = "";
+            for(i= 0; i<contents.length;i++){
+                var a =  contents[i];
+                text += "<h3 class='listtitle'><a href =‘" + a.url +"’>" + a.title + "</a></h3>";
+                text += "<p class = listyulan >" + a.yulan + "</p>" + "<hr class = listline>";
+            };
+
+        document.getElementById("list01").innerHTML = text;
+        };
+
+        show();
+
+    </script>
+
+
+
+    <div class  = "celan">
+
+        <div class="searchbox">
+            <form action="" class="searchform">
+                <input type="text" class="search" placeholder="搜索关键词">
+                <input type="button" class="btn">
+            </form>
+        </div>
+
+        <div class = "remenlist">
+            <p class="rementitle"><img src="./img/fire.png" style="width: 20px;height: 20px; vertical-align: top"><span>&nbsp</span>热门文章</p>
+                <ul class="remenul">
+                    <li><span class="shuzi" style="background-color: #498d8e " >1</span><a href="***">第1篇文章标题</a></li>
+                    <li><span class="shuzi" style="background-color: #999999 " >2</span><a href="***">第2篇文章标题</a></li>
+                    <li><span class="shuzi" style="background-color: #67b3ca ">3</span><a href="***">第3篇文章标题</a></li>
+                </ul>
+        </div>
+
+        <hr class="remenhr">
+
+        <div class = "youqinglist">
+            <p class="youqingtitle"><img src="./img/youqing.png" style="width: 23px;height: 23px; vertical-align: top"><span>&nbsp</span>友情链接</p>
+            <span class="youqingul" style="background-color: #498d8e " >友情链接1</span>
+            <span class="youqingul"  style="background-color: #0c67d8 " >友情链接2</span>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="footer">底部</div>
+
+
+</body>
+
+</html>
