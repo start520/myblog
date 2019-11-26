@@ -129,11 +129,34 @@
                 text-align: center;
                 padding-top: 20px;
                 padding-bottom: 20px;
-                padding-left: 35%;
             }
 
 
-            .zan {
+            .huanying{
+                text-align: center;
+                color: #e28105;
+                padding-bottom: 20px;
+            }
+
+
+
+        .zan {
+                background-color: #939393;
+                width: 80px;
+                height: 80px;
+                font-size: 32px;
+                border-radius: 50%;
+                display: block;
+                line-height: 80px;
+                color: white;
+                float: left;
+                margin-left: 38%;
+                cursor:pointer;
+        }
+
+
+
+            .shang{
                 background-color: #ec7259;
                 width: 80px;
                 height: 80px;
@@ -147,29 +170,118 @@
 
 
 
-        .shang{
-            background-color: #ec7259;
-            width: 80px;
-            height: 80px;
-            font-size: 32px;
-            border-radius: 50%;
-            display: block;
-            line-height: 80px;
-            color: white;
-            float: left;
-        }
-
-
         .pinglun{
             clear: both;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
+
+            .smile{
+                font-size: 14px;
+                color: #333333;
+                padding-bottom: 10px;
+            }
+
+            .next{
+                padding-top: 40px;
+                padding-left: 20px;
+                padding-bottom: 100px;
+            }
+
+
 
 
         .celan{
             width: 30%;
-            background-color: #333366;
+            background-color: white;
             float: left;
+            margin-left: 20px;
         }
+
+
+            .celan-mingpian{
+                padding:20px;
+                border: 1px solid #f0f0f0;
+            }
+
+            .celan-mingpian p {
+                font-size: 14px;
+                line-height: 22px;
+            }
+
+
+            .mingpian{
+                text-align: center;
+                margin: 0 auto;
+            }
+
+
+            .mingpian-tou{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+
+            }
+
+            .mingpian-table{
+                padding-top: 20px;
+                margin: 0 auto;
+            }
+
+            .mingpian-table td{
+                width: 200px;
+                font-size: 14px;
+
+            }
+
+
+
+            .remenlist{
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            .rementitle{
+                font-size: 15px;
+                color: #969696;
+                font-weight: bolder;
+                padding-left: 10px;
+            }
+
+            .remenul{
+                list-style-type: none;
+                font-size: 14px;
+                margin-left: 10px;
+            }
+
+            .remenul li{
+                padding-top: 10px;
+            }
+
+
+            .remenul li a{
+                text-decoration: none;
+                color:#333333 ;
+            }
+
+            .remenul li a:hover{
+                color: #e28105;
+            }
+
+            .shuzi{
+                margin-right:10px ;
+                border-radius:  50%;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                line-height: 18px;
+                color: #fff;
+            }
+
+
+
 
         .footer{
             width: 100%;
@@ -260,19 +372,95 @@
 
         </div>
 
+        <script>
+            $(document).ready(function() {
+                $(".zan").click(function () {
+                    $(".zan").css("background-color", "#ec7259")
+                });
+            });
+
+
+            $(document).ready(function() {
+                $(".shang").mouseenter(function () {
+                    $(".shang").css("backgroung-image", "./img/fire.png")
+                });
+            });
+
+
+        </script>
+
+
 
         <div class="pinglun">
-            这是评论栏
+            <div class="smile"><img src = "./img/smile.png" width="40px" height="40px" style="vertical-align: bottom">欢迎评论~ </div>
+            <form>
+                <textarea rows="6" cols="90"></textarea>
+
+            </form>
+
+
+            <div class="pingkuang">
+            <table class="pingluntable">
+                <tr>
+                    <td><input type="text" placeholder="您的昵称"></td>
+                    <td><input type="text" placeholder="您的邮箱"></td>
+                    <td><input type="text" placeholder="您的网站（选填）"></td>
+                    <td><button>提交评论</button></td>
+
+                </tr>
+            </table>
+            </div>
+
+        </div>
+
+        <div class="next">
+            <p>下一篇:</p>
+            <h2><a href=" *****">这是下一篇文章的标题 </a></h2>
+        </div>
+
+
+    </div>
+
+
+    <div class = "celan">
+
+        <div class = "celan-mingpian">
+            <div class = "mingpian"> <img src ="./img/mytouxiang.jpg" class = "mingpian-tou">
+            <p style="color: #498d8e"><bloder>Veronica</bloder></p>
+            <p style="color: #333333">最新动态</p>
+            <table class="mingpian-table">
+                <tr>
+                    <td>3</td>
+                    <td>786</td>
+                    <td>786</td>
+                </tr>
+                <tr>
+                    <td>文章数量</td>
+                    <td>浏览量</td>
+                    <td>运行天数</td>
+                </tr>
+            </table>
+        </div>
+
+        </div>
+
+
+
+        <div class = "remenlist">
+            <p class="rementitle"><img src="./img/fire.png" style="width: 20px;height: 20px; vertical-align: top"><span>&nbsp</span>热门文章</p>
+            <ul class="remenul">
+                <li><span class="shuzi" style="background-color: #498d8e " >1</span><a href="***">第1篇文章标题</a></li>
+                <li><span class="shuzi" style="background-color: #999999 " >2</span><a href="***">第2篇文章标题</a></li>
+                <li><span class="shuzi" style="background-color: #67b3ca ">3</span><a href="***">第3篇文章标题</a></li>
+            </ul>
         </div>
 
     </div>
 
 
-    <div class = "celan">侧栏</div>
 
 
 
-    
 
 </div>
 
